@@ -29,8 +29,10 @@ Currently covers the city of Trier, specifically navigating the new and expanded
 Affected Streets can be viewed on this website:
 https://www.trier.de/umwelt-verkehr/parken/bewohnerparken/bewohnerparkzonen/
 
-Authors:
-@Denabaghery 
-@Mahmoudrafati
+Contributors:
 
-If you would like to contribute and expand this idea, please leave me a message. 
+[Dena Baghery](https://github.com/DenaBaghery)
+
+[Mahmoud Rafati](https://github.com/mahmoudrafati)
+
+If you would like to contribute and expand this project, please leave me a message. 
