@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin kein Bewohner - Trier Parkplatzfinder</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <!-- Leaflet Routing Machine CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bin kein Bewohner - Trier Parkplatzfinder</h1>
+        <p>Finden Sie verfügbare Parkplätze in Trier, die nicht für Anwohner reserviert sind.</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <button id="locate-btn">Meinen Standort verwenden</button>
+            <input type="text" id="street-input" placeholder="Oder Straße eingeben...">
+            <button id="search-btn">Suchen</button>
+            <!-- Zone toggle will be added here by JS -->
+        </div>
+        <div id="map">
+            <!-- Add zone legend -->
+            <div class="zone-legend">
+                <h4>Bewohnerzonen</h4>
+                <div><span class="color-box" style="background-color: #3792cb"></span> Nord (N)</div>
+                <div><span class="color-box" style="background-color: #97b566"></span> Mitte (M)</div>
+                <div><span class="color-box" style="background-color: #e57373"></span> Süd (S)</div>
+            </div>
+        </div>
+        <div id="results">
+            <h2>Verfügbare Parkmöglichkeiten in der Nähe:</h2>
+            <ul id="parking-list">
+                <!-- Parking spots will be listed here -->
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Kartendaten &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> Mitwirkende</p>
+        <p>Parkzonendaten basierend auf Informationen von <a href="https://www.trier.de/umwelt-verkehr/parken/bewohnerparken/bewohnerparkzonen/" target="_blank" rel="noopener noreferrer">Stadt Trier</a> (Stand: Feb 2025).</p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <!-- Leaflet Routing Machine JS -->
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+    <!-- Local JS -->
+    <script src="script.js"></script>
+</body>
+</html>
